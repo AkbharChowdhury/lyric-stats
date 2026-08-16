@@ -3,17 +3,16 @@ from file_handler import FileHandler
 
 
 def lyric_stats(path: str):
-    data = FileHandler.read_file(path)
-    lyrics = data.lower().split()
-
-    word_mapping: dict[str, set[str]] = defaultdict(set)
+    lyrics: list[str] = FileHandler.read_file(path).lower().split()
+    print(f'{lyrics=}')
+    word_mappings: dict[str, set[str]] = defaultdict(set)
 
     for word in lyrics:
-        word_mapping[word[0]].add(word)
+        word_mappings[word[0]].add(word)
 
     counter = Counter(lyrics)
 
-    return word_mapping, counter
+    return word_mappings, counter
 
 
 

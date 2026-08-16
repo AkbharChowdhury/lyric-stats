@@ -52,8 +52,9 @@ def main():
         'rockabye': find_keywords(Song(rockabye), rockabye_keywords),
         'ciao-adios': find_keywords(Song(ciao_adios), ciao_adios_keywords),
     }
+
     show_results(results)
-    # show_lyrics_details(ciao_adios)
+    show_lyrics_details(ciao_adios)
 
 
 if __name__ == '__main__':
