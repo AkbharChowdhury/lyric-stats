@@ -6,14 +6,13 @@ from song import Song
 
 def show_results(results: dict[str, str]) -> None:
     for name, result in results.items():
-        print(name.title())
+        print(name)
         show_border()
         print(result)
 
-
 songs: dict[str, str] = {
-    'rockabye': 'lyrics/rockabye.txt',
-    'ciao-adios': 'lyrics/ciao-adios.txt',
+    'Rockabye': 'lyrics/Rockabye.txt',
+    'Ciao Adios': 'lyrics/Ciao Adios.txt',
 }
 rockabye, ciao_adios = songs.values()
 
@@ -49,8 +48,8 @@ def main():
     ]
 
     results: dict[str, str] = {
-        'rockabye': find_keywords(Song(rockabye), rockabye_keywords),
-        'ciao-adios': find_keywords(Song(ciao_adios), ciao_adios_keywords),
+        'Rockabye': find_keywords(Song(rockabye), rockabye_keywords),
+        'Ciao Adios': find_keywords(Song(ciao_adios), ciao_adios_keywords),
     }
 
     show_results(results)

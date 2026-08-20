@@ -20,6 +20,6 @@ It also groups words by their first letter and uses `Counter` to show word frequ
 The project currently includes lyrics for:
 
 - Rockabye
-- Ciao-Adios
+- Ciao Adios
 
 This project is primarily a Python practice project focused on working with files, dictionaries, sets, `Counter`, `defaultdict`, classes, type hints, and separating data processing from presentation.
